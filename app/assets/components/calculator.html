@@ -1,0 +1,241 @@
+<div class="line"></div>
+<form class="box container calculator" id="calculator-form">
+  <h6 class="calculator-title">Розрахуйте попередню вартість і тривалість ремонту</h6>
+    <!-- block realty -->
+    <div class="step-1 active">
+      <p class="step-title">Виберіть тип нерухомості</p>
+      <div class="row">
+        <div class="col">
+          <img class="photo-input-col" src="./img/laptop.jpg"/>
+          <div class="input-box">
+            <input name="immovables" type="radio" id="type-build-commercial" value="commercial">
+            <label for="type-build-commercial"><span class="pill"></span>Комерційна нерухомість</label>
+          </div>
+        </div>
+        <div class="col">
+          <img class="photo-input-col" src="./img/cat.jpg"/>
+          <div class="input-box">
+            <input name="immovables" type="radio" id="type-build-living" value="living">
+            <label for="type-build-living"><span class="pill"></span>Житлова нерухомість</label>
+          </div>
+        </div>
+      </div>
+    </div>
+         <!-- block object -->
+    <div class="step-2">
+      <p class="step-title">Виберіть тип об’єкту</p>
+      <div class="row">
+        <div class="col">
+          <img class="photo-input-col" src="./img/new_area.jpg"/>
+          <div class="input-box">
+            <input name="type_build" type="radio" id="type-build-living-4" value="new_living">
+            <label for="type-build-living-4">
+              <span class="pill"></span>
+              Новобудова
+            </label>
+          </div>
+        </div>
+        <div class="col">
+          <img class="photo-input-col" src="./img/secend_area.jpg"/>
+          <div class="input-box">
+            <input name="type_build" type="radio" id="type-build-living-5" value="secend_living">
+            <label for="type-build-living-5"><span class="pill"></span>Вторинне житло</label>
+          </div>
+        </div>
+        <div class="col">
+          <img class="photo-input-col" src="./img/cottage.jpg"/>
+          <div class="input-box">
+            <input name="type_build" type="radio" id="type-build-living-7" value="cottag_living">
+            <label for="type-build-living-7"><span class="pill"></span>Котедж</label>
+          </div>
+        </div>
+      </div>
+    </div>
+       <!-- block  area -->
+    <div class="step-3">
+      <p class="step-title">Вкажіть орієнтовну площу</p>
+      <div class="range-area-wrapper">
+        <img class="area-img" src="./img/area.jpg"/>
+        <div class="range-area-box">
+          <div class="range-area">
+            <div>
+              <span class="indicate-area">площа</span>
+              <span id="demo"></span>
+              <span class="indicate-area">м*</span>
+            </div>
+            <div class="indicate-area">
+              <div class="input-box">
+                <input name="is_not_remember" type="radio" id="is-not-remember" value="yes">
+                <label for="is-not-remember">
+                  <span class="pill"></span>
+                  не пам’ятаю
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="slidecontainer">
+            <input type="range" min="40" max="140" value="50" class="slider" id="myrange" name="area" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- block room-->
+    <div class="rectangle room step-4">
+      <p class="step-title">Вкажіть кількість кімнат</p>
+      <div class="type-property-room">
+        <div class="col-room-first">
+          <img class="room-img" src="./img/room.jpg"/>
+        </div>
+        <div class="content">
+          <div class="input-box">
+            <input name="total_room" type="radio" id="type-total-room" value="1">
+            <label for="type-total-room">
+              <span class="pill"></span>
+              1
+            </label>
+          </div>
+          <div class="input-box">
+            <input name="total_room" type="radio" id="type-total-room-2" value="2">
+            <label for="type-total-room-2">
+              <span class="pill"></span>
+              2
+            </label>
+          </div>
+          <div class="input-box">
+            <input name="total_room" type="radio" id="type-total-room-3" value="3">
+            <label for="type-total-room-3">
+              <span class="pill"></span>
+              3
+            </label>
+          </div>
+          <div class="input-box">
+            <input name="total_room" type="radio" id="type-build-living-14" value="4">
+            <label for="type-build-living-14">
+              <span class="pill"></span>
+              4 і більше
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+     <!-- mobile version block room-->
+     <!-- <div class="rectangle room-mobile-version">
+      <p class="text-choose">Вкажіть кількість кімнат</p>
+      <div class="type-property-room">
+        <div class="col-room-first">
+          <p class="indicate-room"><span><img class="circle" src="./img/circle.svg"/></span>1</p>
+          <p class="indicate-room even"><span><img class="circle" src="./img/circle.svg"/></span>2</p>
+          <p class="indicate-room"><span><img class="circle" src="./img/circle.svg"/></span>3</p>
+          <p class="indicate-room even"><span><img class="circle" src="./img/circle.svg"/></span>4 і більше</p>
+        </div>
+        <div class="col-room-second">
+          <button type="button" class="further">Назад</button>
+          <button type="button" class="further">Далі</button>
+        </div>
+        </div>
+    </div> -->
+
+    <!--block type of repair-->
+    <div class="rectangle type step-5">
+      <p class="step-title">Вкажіть тип ремонту</p>
+      <div class="content">
+        <div class="col-type-first">
+          <img class="room-img" src="./img/type-repair.jpg"/>
+        </div>
+        <div class="input-wrapper">
+          <div class="input-box">
+            <input name="repair" type="radio" id="type-repairs" value="part">
+            <label for="type-repairs">
+              <span class="pill"></span>
+              Частковий
+            </label>
+          </div>
+          <div class="input-box">
+            <input name="repair" type="radio" id="type-repairs-2" value="full">
+            <label for="type-repairs-2">
+              <span class="pill"></span>
+              Під ключ
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- block  disign-project -->
+    <div class="rectangle design-project step-6 hide">
+      <p class="step-title">Чи маєте дизайн-проект?</p>
+      <div class="type-property design">
+        <div class="col-design-first">
+          <img class="design-img" src="./img/design.jpg"/>
+        </div>
+        <div class="input-box-wrapper">
+          <div class="input-box">
+            <input name="is_desine" type="radio" id="is-project" value="yes">
+            <label for="is-project">
+              <span class="pill"></span>
+              Так, маю
+            </label>
+          </div>
+          <div class="input-box">
+            <input name="is_desine" type="radio" id="is-project-2" value="no">
+            <label for="is-project-2">
+              <span class="pill"></span>
+              Ні, без дизайну
+            </label>
+          </div>
+          <div class="input-box">
+            <input name="is_desine" type="radio" id="is-project-3" value="none">
+            <label for="is-project-3">
+              <span class="pill"></span>
+              Ні, мені потрібен дизайн-проект
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- block when-start -->
+    <div class="rectangle when-start step-7 hide">
+      <p class="step-title">Як скоро необхідно почати?</p>
+      <div class="type-property design">
+        <div class="col-design-first">
+          <img class="room-img" src="./img/begin.jpg"/>
+        </div>
+        <div class="input-box-wrapper">
+          <div class="input-box">
+            <input name="deadline" type="radio" id="type-deadline" value="a">
+            <label for="type-deadline">
+              <span class="pill"></span>
+              Залежить від вартості
+            </label>
+          </div>
+          <div class="input-box">
+            <input name="deadline" type="radio" id="type-deadline-2" value="b">
+            <label for="type-deadline-2">
+              <span class="pill"></span>
+              Протягом тижня
+            </label>
+          </div>
+          <div class="input-box">
+            <input name="deadline" type="radio" id="type-deadline-3" value="c">
+            <label for="type-deadline-3">
+              <span class="pill"></span>
+              Протягом місяця
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- block registration -->
+    <div class="rectangle registration step-8">
+      <p class="text-done">Готово!</p>
+      <p class="text-choose-registr">Щоб зафіксувати за собою знижку 4% і отримати точний розрахунок, залиште свої дані</p>
+      <div class="button-registration">
+        <input  name="user_name" type="text" placeholder="имʼя" required>
+        <input class="telephone" name="phone" type="number" placeholder="номер телефону" required></br>
+        <button type="submit" class="submit">Відправити</button>
+      </div>
+    </div>
+    <div class="box-next-btn">
+      <button type="button" class="prev-btn">Назад</button>
+      <button type="button" class="next-btn">Далі</button>
+    </div>
+</form>

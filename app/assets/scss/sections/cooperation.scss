@@ -1,0 +1,174 @@
+h4 {
+  text-align: center;
+  padding-bottom: 80px;
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 78px;
+  letter-spacing: 0.01em;
+  color: #654c3a;
+}
+.appellation {
+  padding-bottom: 10px;
+  img {
+    margin-right: 10px;
+  }
+}
+.line-one {
+  padding-top: 5px;
+}
+.box-cooperation {
+  display: flex;
+  width: 100%;
+}
+.col {
+  width: 50%;
+}
+.star {
+  width: 34.17px;
+  height: 32.46px;
+  display: inline;
+}
+.text-quality,
+.text-speed,
+.text-cost {
+  display: inline;
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 59px;
+  letter-spacing: 0.01em;
+  color: #9a7a62;
+}
+.cost {
+  padding-top: 56px;
+}
+p {
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: 0.01em;
+  color: #6c7475;
+}
+.photo-speed {
+  width: 20.5px;
+  height: 34.17px;
+  display: inline;
+}
+
+.photo-cost {
+  width: 32.46px;
+  height: 30.75px;
+  display: inline;
+}
+.advantage {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+  h4 {
+    padding-bottom: 40px;
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .box-cooperation {
+    display: flex;
+    width: 100%;
+  }
+  .col {
+    padding-top: 0; //не отрабатывает и откудо тянется 30
+  }
+  .star {
+    width: 18.17px;
+    height: 17.46px;
+    display: inline;
+  }
+  .text-quality,
+  .text-speed,
+  .text-cost {
+    display: inline;
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .cost {
+    padding-top: 30px;
+  }
+  p {
+    font-size: 36px;
+    line-height: 44px;
+    font-size: 19px;
+    line-height: 23px;
+  }
+  .photo-speed {
+    width: 11.5px;
+    height: 18.17px;
+  }
+
+  .photo-cost {
+    width: 17.46px;
+    height: 16.75px;
+  }
+}
+
+@media (max-width: 415px) {
+  h4 {
+    display: none;
+  }
+  .advantage {
+    display: block;
+    font-family: Montserrat Alternates;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: 0.01em;
+    color: #654c3a;
+    text-align: center;
+  }
+
+  .box-cooperation {
+    display: inline-block;
+  }
+
+  .col {
+    padding-top: 2px;
+    width: 100%;
+  }
+  .star {
+    width: 18.17px;
+    height: 17.46px;
+    display: inline;
+  }
+  .cost {
+    padding-top: 30px;
+  }
+  p {
+    font-size: 36px;
+    line-height: 44px;
+    font-size: 19px;
+    line-height: 23px;
+  }
+  .photo-speed {
+    width: 11.5px;
+    height: 18.17px;
+  }
+
+  .photo-cost {
+    width: 17.46px;
+    height: 16.75px;
+  }
+  .line-one {
+    &::before {
+      content: "•";
+      display: inline-block;
+      margin-right: 5px;
+    }
+  }
+}

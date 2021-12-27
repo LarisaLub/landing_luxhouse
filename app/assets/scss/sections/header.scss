@@ -1,0 +1,127 @@
+header {
+  background: rgba(225, 222, 217, 0.7);
+  padding: 40px 70px;
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+
+  .button {
+    padding: 10px 19px;
+    list-style: none;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-size: 23px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #654c3a;
+    border: 0.5px solid #6c7475;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+  .phone {
+    list-style: none;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 0.01em;
+    color: #654c3a;
+  }
+
+  .photo {
+    width: 18px;
+    padding-left: 18px;
+    padding-right: 8px;
+  }
+
+  .text {
+    font-family: "Montserrat Alternates";
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 0.01em;
+    color: #654c3a;
+  }
+
+  .text-repairs {
+    display: none;
+  }
+
+  .text-we-do-repair {
+    display: none;
+  }
+
+  @media (max-width: 1200px) {
+    .text {
+      width: 300px;
+    }
+  }
+
+  @media (max-width: 928px) {
+    padding: 18px 40px;
+    .button {
+      border-radius: 5px;
+      font-size: 14px;
+      line-height: 17px;
+    }
+    .phone {
+      padding-left: 18px;
+      font-size: 14px;
+      line-height: 17px;
+    }
+    .coll-me {
+      line-height: 17px;
+    }
+    .photo {
+      display: none;
+    }
+
+    .text {
+      width: 200px;
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .text {
+      display: none;
+    }
+  }
+
+  @media (max-width: 414px) {
+    padding: 14px 25px;
+    .button {
+      border-radius: 5px;
+      padding: 6px 12px;
+    }
+    .phone {
+      padding-left: 12px;
+      font-size: 14px;
+      line-height: 17px;
+    }
+    .coll-me {
+      font-size: 14px;
+      line-height: 17px;
+    }
+
+    .text {
+      display: none;
+    }
+  }
+
+  @media (max-width: 350px) {
+    .button {
+      font-size: 10px;
+    }
+  }
+}

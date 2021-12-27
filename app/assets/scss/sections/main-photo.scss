@@ -1,0 +1,99 @@
+.main-photo {
+  height: 100vh;
+  background-size: cover;
+  background-position: right;
+  background-image: url("/img/main-photo-destop.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.title {
+  max-width: 900px;
+  padding-top: 253px;
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 46px;
+  line-height: 56px;
+  letter-spacing: 0.01em;
+  color: #654c3a;
+  padding-bottom: 17px;
+}
+// .lamp {
+//   width: 100%;
+// }
+// .kolos {
+//   width: 100%;
+// }
+.descript {
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 45px;
+  line-height: 55px;
+  letter-spacing: 0.01em;
+  color: #9a7a62;
+  max-width: 556px;
+}
+
+// .section {
+//   width: 100%;
+//   display: flex;
+// }
+
+.text-we-do-repair {
+  display: none;
+  background: #654c3a;
+  font-family: "Montserrat Alternates";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  color: #e1ded9;
+  text-decoration: none;
+  padding: 14px 14px 12px 12px !important;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+  .title {
+    padding-top: 129px;
+    padding-bottom: 12px;
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .descript {
+    font-size: 25px;
+    width: 310px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .text-we-do-repair {
+    display: block;
+  }
+}
+
+@media (max-width: 415px) {
+  .main-photo {
+    background-image: url("/img/main-photo-mobile.jpg");
+  }
+  .title {
+    padding-top: 80px;
+    padding-bottom: 7px;
+    font-size: 27px;
+    line-height: 128.4%;
+    font-weight: 500;
+  }
+
+  .descript {
+    font-size: 27px;
+    width: 276px;
+  }
+}

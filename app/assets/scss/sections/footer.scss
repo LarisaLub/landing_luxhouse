@@ -1,0 +1,44 @@
+footer {
+  display: flex;
+  background: #6C7475;
+  justify-content: space-between;
+   }
+   .col{
+    padding-top: 30px;
+      }
+  .text{
+    font-family: Montserrat Alternates;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    color: #E1DED9;
+  }
+
+@media (max-width: 1024px) {}
+
+
+@media (max-width: 768px) {}
+
+@media (max-width: 414px) {
+
+  footer {
+    .schedule {
+      display: none;
+    }
+  .col{
+      justify-content: flex-end;
+      padding-top: 15px;
+      width: 50%;
+          }
+    .text{
+      font-size: 10px;
+      line-height: 12px;
+       }
+       .string{
+         padding-top: 5px;
+       }
+  }
+     
+}

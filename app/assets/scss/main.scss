@@ -1,0 +1,62 @@
+@import "./libs/magnific-popup.scss";
+@import "./sections/header.scss";
+@import "./sections/main-photo.scss";
+@import "./sections/description.scss";
+@import "./sections/cooperation.scss";
+@import "./sections/calculator.scss";
+@import "./sections/work.scss";
+@import "./sections/footer.scss";
+@import "./sections/alert.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  //width: 1440px;
+  overflow-x: hidden;
+}
+
+.container {
+  padding: 0 70px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.line {
+  width: 500px;
+  margin: 100px auto;
+  border: 1px solid #928a82;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 30px;
+  }
+  .line {
+    width: 192px;
+    margin: 50px auto;
+  }
+}
+
+@media (max-width: 414px) {
+  .container {
+    padding: 20px;
+    margin: 0 auto;
+  }
+  .line {
+    width: 138px;
+    margin: 30px auto;
+  }
+}
